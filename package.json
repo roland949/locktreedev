@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./css/style.css && node version-assets.js",
+    "build": "npx tailwindcss -i ./src/input.css -o ./css/style.css --minify && node version-assets.js",
     "dev": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch",
     "clean": "rm -rf dist css/style.*.css"
   },
