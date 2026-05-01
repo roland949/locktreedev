@@ -29,18 +29,21 @@ You need to have **Node.js** and **npm** installed on your machine.
 
 ### Development
 
-This project uses Tailwind CSS v4. To compile the CSS and prepare the production build, use the following commands:
+This project uses Tailwind CSS v4. **Note:** The `css/style.css` file is not included in the repository and must be generated locally.
+
+To compile the CSS and prepare the production build, use the following commands:
+
+- **Development (generate CSS and watch for changes):**
+  ```bash
+  npm run dev
+  ```
+  This command is required for the styles to appear correctly when opening `index.html` locally.
 
 - **Production Build (with versioning):**
   ```bash
   npm run build
   ```
   This command generates a `dist` folder containing the production-ready `index.html` and versioned assets (CSS, JS, images).
-
-- **Watch for changes (recommended during development):**
-  ```bash
-  npm run dev
-  ```
 
 > **Note:** The `dist` folder is automatically generated and ignored by git. The build process includes a versioning script that updates the asset references in `dist/index.html`.
 
