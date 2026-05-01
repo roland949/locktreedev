@@ -9,4 +9,5 @@
 
 node_modules
 .npm-cache
-assets/css/
+dist
+css

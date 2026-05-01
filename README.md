@@ -29,26 +29,33 @@ You need to have **Node.js** and **npm** installed on your machine.
 
 ### Development
 
-This project uses Tailwind CSS v4. To compile the CSS, use the following commands:
+This project uses Tailwind CSS v4. To compile the CSS and prepare the production build, use the following commands:
 
-- **Build once (with versioning):**
+- **Production Build (with versioning):**
   ```bash
   npm run build
   ```
+  This command generates a `dist` folder containing the production-ready `index.html` and versioned assets (CSS, JS, images).
 
 - **Watch for changes (recommended during development):**
   ```bash
   npm run dev
   ```
 
-> **Note:** The compiled CSS files in `assets/css/` are automatically generated and are ignored by git. The build process includes a versioning script that updates the CSS reference in `index.html`.
+> **Note:** The `dist` folder is automatically generated and ignored by git. The build process includes a versioning script that updates the asset references in `dist/index.html`.
 
 ### Running the Project
 
-Since this is a static site, you can view it by simply opening the `index.html` file in your preferred web browser:
+For development, you can view the site by simply opening the source `index.html` file in your preferred web browser:
 
 ```bash
 open index.html # On macOS
+```
+
+For production testing, open the file in the `dist` folder after running the build:
+
+```bash
+open dist/index.html
 ```
 
 Alternatively, you can use a local development server like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code or any other static file server.
