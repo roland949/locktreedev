@@ -31,15 +31,17 @@ You need to have **Node.js** and **npm** installed on your machine.
 
 This project uses Tailwind CSS v4. To compile the CSS, use the following commands:
 
-- **Build once:**
+- **Build once (with versioning):**
   ```bash
   npm run build
   ```
 
 - **Watch for changes (recommended during development):**
   ```bash
-  npm run watch
+  npm run dev
   ```
+
+> **Note:** The compiled CSS files in `assets/css/` are automatically generated and are ignored by git. The build process includes a versioning script that updates the CSS reference in `index.html`.
 
 ### Running the Project
 
